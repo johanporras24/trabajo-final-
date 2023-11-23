@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a mi Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-form sign-up" id="sign-up-form">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenid@s</h2>
+                <p>Si ya tienes una cuenta por favor inicia sesión aquí</p>
+                <button class="sign-in-btn">Iniciar Sesión</button>
+            </div>
+        </div>
+        <form class="formulario">
+            <h2 class="create-account">Crear cuenta</h2>
+            <div class="welcome-back">
+                <a href="./gastos/index.html">control de gastos</a>
+            </div>
+            <div class="iconos">
+                <div class="border-icon">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="border-icon">
+                    <a href="https://co.linkedin.com/" target="_blank">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+
+                </div>
+                <div class="border-icon">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+
+            </div>
+            <p class="cuenta-gratis">Crear cuenta gratis</p>
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellidos">
+            <input type="text" placeholder="Identificación">
+            <input type="text" placeholder="Usuario" id="register-username">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña" id="register-password">
+            <input type="password" placeholder="Repetir Contraseña">
+            <input type="button" value="Registrarse" id="register-button">
+        </form>
+    </div>
+
+    <div class="container-form sign-in" id="sign-in-form">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesión</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="border-icon">
+                    <a href="https://co.linkedin.com/" target="_blank">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                </div>
+                <div class="border-icon">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aún no tienes una cuenta?</p>
+            <input type="text" placeholder="Usuario" id="login-username">
+            <input type="password" placeholder="Contraseña" id="login-password">
+            <input type="button" value="Iniciar Sesión" id="login-button">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aún no tienes una cuenta por favor regístrate aquí</p>
+                <button class="sign-up-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+    <div id="message" class="success-message"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../gastos/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="gastos">Control de Gastos</h1>
+
+    <div class="tope">
+        <label class="maximo" for="tope">Tope Máximo de Dinero:</label>
+        <input class="tope"  type="number" id="tope" required>
+        <button class="btn" onclick="establecerTope()">Establecer Tope</button>
+    </div>
+
+    <div>
+        <a href="../login/main.html"></a>
+    </div>
+    
+    <div class="registrar">
+        <h2>Registrar Gasto</h2>
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" required min="1000">
+        <label for="categoria">Categoría:</label>
+        <select id="categoria">
+            <option value="negocios">Negocios</option>
+            <option value="diversion">Diversión</option>
+            <option value="transporte">Transporte</option>
+            <option value="comida">Comida</option>
+        </select>
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" required>
+        <button class="click" onclick="registrarGasto()">Registrar Gasto</button>
+    </div>
+
+    <div class="listar">
+        <h2>Listar Gastos</h2>
+        <button  class="btn" onclick="listarGastosPorCategoria('negocios')">Negocios</button>
+        <button  class="btn" onclick="listarGastosPorCategoria('diversion')">Diversión</button>
+        <button  class="btn" onclick="listarGastosPorCategoria('transporte')">Transporte</button>
+        <button  class="btn" onclick="listarGastosPorCategoria('comida')">Comida</button>
+        <button  class="btn" onclick="listarTodosLosGastos()">Todos los Gastos</button>
+        <button  class="btn" onclick="listarGastosPorUsuario()">Gastos por Usuario</button>
+    </div>
+
+    <div id="gastos"></div>
+
+    <script src="../gastos/script.js"></script>    
+</body>
+</html>

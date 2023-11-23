@@ -1,0 +1,38 @@
+.btn {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.registrar {
+    color: rgb(0, 0, 0);
+}
+
+.click {
+    color: rgb(0, 0, 0);
+}
+
+.gastos {
+    color: blueviolet;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+}
+
+.maximo {
+    color: rgb(0, 0, 0);
+    font-size:20px;
+    font-family:Courier;
+    text-align: center;
+}
+
+* {
+    color:rgb(0, 0, 0); 
+    font-weight:bold;
+    font-style:italic;
+    line-height:30px;
+    letter-spacing:2px;
+    box-sizing: border-box;
+}
